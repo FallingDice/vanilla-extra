@@ -1,0 +1,5 @@
+name: thanatos
+description: game over
+type: flying
+
+hitSize: 60
