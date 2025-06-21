@@ -47,11 +47,11 @@ weapons: [
         mirror: false
         reload: 45
         x: -4
-        y:2
+        y:1
         top: false
         ejectEffect: none
-        recoil: -4
-        shootY: 4
+        recoil: -2
+        shootY: 2
 
         bullet: {
             type: BasicBulletType
