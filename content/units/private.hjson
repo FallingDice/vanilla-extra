@@ -14,17 +14,17 @@ weapons: [
         name: spear-weapon
         shootSound: none
         mirror: false
-        reload: 10
+        reload: 30
         x: 4
         y:2
         top: false
         ejectEffect: none
-        recoil: -6
-        shootY: 6
+        recoil: -8
+        shootY: 8
 
         bullet: {
             type: BasicBulletType
-            damage: 10
+            damage: 30
             speed: 3
             width: 7
             height: 9
