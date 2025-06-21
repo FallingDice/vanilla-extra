@@ -4,8 +4,8 @@ type: mech
 
 hitSize: 8
 speed: 0.6
-health: 120
-armor: 5
+health: 360
+armor: 6
 
 range: 40
 
