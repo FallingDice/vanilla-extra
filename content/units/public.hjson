@@ -7,7 +7,7 @@ speed: 0.6
 health: 360
 armor: 6
 
-range: 60
+range: 20
 targetAir: false
 
 weapons: [
