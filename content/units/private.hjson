@@ -7,6 +7,8 @@ speed: 0.8
 health: 240
 armor: 1
 
+range: 40
+
 weapons: [
     {
         name: spear-weapon
@@ -27,6 +29,10 @@ weapons: [
             width: 7
             height: 9
             lifetime: 2
+            collidesAir: false
+            pierce: true
+            pierceCap: 1
+            rangeOverride: 80
 
             //basic effect
             shootEffect: none
