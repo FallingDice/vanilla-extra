@@ -17,7 +17,8 @@ weapons: [
         y:2
         top: false
         ejectEffect: none
-        recoil: -4
+        recoil: -6
+        shootY: 6
 
         bullet: {
             type: BasicBulletType
@@ -25,7 +26,7 @@ weapons: [
             speed: 3
             width: 7
             height: 9
-            lifetime: 1
+            lifetime: 2
 
             //basic effect
             shootEffect: none
