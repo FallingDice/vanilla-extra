@@ -1,0 +1,37 @@
+name: private
+description: pv1
+type: mech
+
+hitSize: 8
+speed: 0.8
+health: 240
+armor: 1
+
+weapons: [
+    {
+        name: spear-weapon
+        shootSound: none
+        mirror: false
+        reload: 1
+        x: 4
+        y:2
+        top: false
+        ejectEffect: none
+        recoil: -4
+
+        bullet: {
+            type: BasicBulletType
+            damage: 1
+            speed: 3
+            width: 7
+            height: 9
+            lifetime: 1
+
+            //basic effect
+            shootEffect: sparkShoot
+            smokeEffect: none
+            hitEffect: hitBulletColor
+            despawnEffect: none
+        }
+    }
+]
