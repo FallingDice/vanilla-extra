@@ -1,0 +1,86 @@
+name: public
+description: high defense.
+type: mech
+
+hitSize: 8
+speed: 0.6
+health: 120
+armor: 5
+
+range: 40
+
+weapons: [
+    {
+        name: spear-weapon
+        shootSound: none
+        mirror: false
+        reload: 30
+        x: 4
+        y:2
+        top: false
+        ejectEffect: none
+        recoil: -8
+        shootY: 8
+
+        bullet: {
+            type: BasicBulletType
+            damage: 30
+            speed: 3
+            width: 7
+            height: 9
+            lifetime: 2
+            collidesAir: false
+            pierce: true
+            pierceCap: 1
+            rangeOverride: 80
+
+            //basic effect
+            shootEffect: none
+            smokeEffect: none
+            hitEffect: hitBulletColor
+            despawnEffect: none
+        }
+    },
+    {
+        name: shield-weapon
+        shootSound: none
+        mirror: false
+        reload: 45
+        x: -4
+        y:2
+        top: false
+        ejectEffect: none
+        recoil: -4
+        shootY: 4
+
+        bullet: {
+            type: BasicBulletType
+            damage: 5
+            speed: 3
+            width: 7
+            height: 9
+            lifetime: 2
+            collidesAir: false
+            pierce: true
+            pierceCap: 1
+            rangeOverride: 80
+            knockback: 3
+
+            //basic effect
+            shootEffect: none
+            smokeEffect: none
+            hitEffect: hitBulletColor
+            despawnEffect: none
+        }
+    }
+]
+
+abilities: [
+    {
+        type: SpawnDeathAbility
+        amount: 1
+        spread: 0
+        faceOutwards: false
+        unit: private
+    }
+]
