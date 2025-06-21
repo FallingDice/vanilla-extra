@@ -1,5 +1,6 @@
 name: leviathan
 description: game over
 type: flying
+flying: true
 
-hitSize: 60
+hitSize: 70

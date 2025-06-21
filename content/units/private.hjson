@@ -12,7 +12,7 @@ weapons: [
         name: spear-weapon
         shootSound: none
         mirror: false
-        reload: 1
+        reload: 10
         x: 4
         y:2
         top: false
@@ -21,14 +21,14 @@ weapons: [
 
         bullet: {
             type: BasicBulletType
-            damage: 1
+            damage: 10
             speed: 3
             width: 7
             height: 9
             lifetime: 1
 
             //basic effect
-            shootEffect: sparkShoot
+            shootEffect: none
             smokeEffect: none
             hitEffect: hitBulletColor
             despawnEffect: none
