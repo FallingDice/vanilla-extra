@@ -22,7 +22,7 @@ parts: [
       {
         type: partMove
         progress: recoil
-        y: 2
+        moveY: 2
       }
     ]
   },
@@ -35,14 +35,14 @@ parts: [
     under: false
     x: 0
     y: 0
-    moveX: 0
+    moveX: 2
     moveY: -4
     layerOffset: 0.2
     moves: [
       {
         type: partMove
         progress: recoil
-        y: 4
+        moveY: 4
       }
     ]
   },
@@ -55,14 +55,14 @@ parts: [
     under: false
     x: 0
     y: 0
-    moveX: 2
+    moveX: 0
     moveY: -6
     layerOffset: 0.1
     moves: [
       {
         type: partMove
         progress: recoil
-        y: 6
+        moveY: 6
       }
     ]
   },
@@ -82,7 +82,7 @@ parts: [
       {
         type: partMove
         progress: recoil
-        y: 8
+        moveY: 8
       }
     ]
   },
@@ -102,7 +102,7 @@ parts: [
       {
         type: partMove
         progress: recoil
-        y: 10
+        moveY: 10
       }
     ]
   }
@@ -110,7 +110,7 @@ parts: [
 
 weapons: [
     {
-        name: spear-weapon
+        name: large-weapon
         shootSound: none
         mirror: false
         reload: 600
