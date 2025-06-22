@@ -4,6 +4,18 @@ type: flying
 flying: true
 
 hitSize: 50
+speed: 0.1
+health: 2400000
+armor: 20
+
+accel: 0.5
+drag: 0.2
+rotateSpeed: 0.1
+
+engineSize: 7
+engineOffset: 60
+trailLength: 32
+fallSpeed: 0.0018
 
 parts: [
   {
@@ -16,7 +28,7 @@ parts: [
     x: 0
     y: 0
     moveX: 0
-    moveY: -2
+    moveY: -1
     layerOffset: 0.3
     moves: [
       {
@@ -35,8 +47,8 @@ parts: [
     under: false
     x: 0
     y: 0
-    moveX: 2
-    moveY: -4
+    moveX: 1
+    moveY: -2
     layerOffset: 0.2
     moves: [
       {
@@ -56,7 +68,7 @@ parts: [
     x: 0
     y: 0
     moveX: 0
-    moveY: -6
+    moveY: -3
     layerOffset: 0.1
     moves: [
       {
@@ -76,7 +88,7 @@ parts: [
     x: 0
     y: 0
     moveX: 0
-    moveY: -8
+    moveY: -4
     layerOffset: 0
     moves: [
       {
@@ -96,7 +108,7 @@ parts: [
     x: 0
     y: 0
     moveX: 0
-    moveY: -10
+    moveY: -5
     layerOffset: -0.1
     moves: [
       {
@@ -108,36 +120,105 @@ parts: [
   }
 ]
 
+immunities: [
+    wet, tarred, melting, freezing,
+    blasted, slow, burning, muddy,
+    sapped, shocked, electrified, spore-slowed,
+    corroded, disarmed
+    ]
+
 weapons: [
-    {
-        name: large-weapon
-        shootSound: none
-        mirror: false
-        reload: 600
-        x: 4
-        y:2
-        top: false
-        ejectEffect: none
-        recoil: -8
-        shootY: 8
+  {
+    name: spear-weapon
+    faceTarget: true
+    mirror: false
+    rotate: true
+    rotateSpeed: 0.4
+    x: 0
+    y: 0
+    reload: 500
+    ejectEffect: casing4
+    shootSound: largeCannon
+    chargeSound: lasercharge
 
         bullet: {
             type: BasicBulletType
-            damage: 30
-            speed: 3
-            width: 7
-            height: 9
-            lifetime: 2
-            collidesAir: false
+            damage: 10000
+            speed: 30
+            width: 10
+            height: 24
+            lifetime: 30
+            trailWidth: 6
+            trailLength: 52
+            hitEffect: massiveExplosion
+            splashDamage: 800
+            splashDamageRadius: 100
             pierce: true
-            pierceCap: 1
-            rangeOverride: 80
+            pierceBuilding: true
+            pierceCap: 3
+            impact: true
+            lightning: 8
+            lightningLength: 6
+            lightningLengthRand: 5
+            lightningDamage: 100
 
-            //basic effect
-            shootEffect: none
-            smokeEffect: none
-            hitEffect: hitBulletColor
-            despawnEffect: none
+            status: disarmed
+
+            smokeEffect: shootSmokeDisperse
+            hitEffect: flakExplosion
+            despawnEffect: hitBulletColor
+            chargeEffect: {
+                type: WaveEffect
+                rotWithParent: true
+                followParent: true
+
+                sizeFrom: 60
+                sizeTo: 0
+
+                lifetime: 120
+
+                colorFrom: ff6000
+                colorTo: ffffff
+            }
+
+            shootEffect: {
+                type: WaveEffect
+                lifetime: 50
+                sizeFrom: 40
+                sizeTo: 0
+                strokeFrom:4
+                strokeTo:2
+                colorFrom: ff6000
+                colorTo: ffffff00
+            }
         }
+  }
+]
+
+deathSound: largeExplosion
+deathExplosionEffect: [
+    {
+    type: ParticleEffect
+    baseLength: 12
+    length: -6
+    cone: 360
+    particles: 6
+    lifetime: 15
+    sizeFrom: 1.2
+    sizeTo: 0
+    colorFrom: ff8f0070
+    colorTo: ff8f0000
+    },
+    {
+    type: ParticleEffect
+    baseLength: 17
+    length: -9
+    cone: 360
+    particles: 3
+    lifetime: 15
+    sizeFrom: 2
+    sizeTo: 0
+    colorFrom: ff600070
+    colorTo: ff600000
     }
 ]

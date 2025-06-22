@@ -4,3 +4,22 @@ type: flying
 flying: true
 
 hitSize: 70
+speed: 0.1
+health: 60000000
+armor: 35
+
+accel: 0.7
+drag: 0.3
+rotateSpeed: 0.1
+
+engineSize: 7
+engineOffset: 80
+trailLength: 48
+fallSpeed: 0.0018
+
+immunities: [
+    wet, tarred, melting, freezing,
+    blasted, slow, burning, muddy,
+    sapped, shocked, electrified, spore-slowed,
+    corroded, disarmed
+    ]
