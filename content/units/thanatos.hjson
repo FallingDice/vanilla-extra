@@ -131,67 +131,62 @@ immunities: [
 weapons: [
   {
     faceTarget: true
+    top: false
     mirror: false
-    rotate: true
-    rotateSpeed: 0.4
     x: 0
     y: 0
-    reload: 500
+    shootY: 15
     ejectEffect: casing4
-    shootSound: largeCannon
+
+    reload: 500
+    recoil: 0
     chargeSound: lasercharge
+    shootSound: beam
+    soundPitchMin: 1
+    continuous:true
 
-        bullet: {
-            type: BasicBulletType
-            damage: 10000
-            speed: 30
-            width: 10
-            height: 24
-            lifetime: 30
-            trailWidth: 6
-            trailLength: 52
-            hitEffect: massiveExplosion
-            splashDamage: 800
-            splashDamageRadius: 100
-            pierce: true
-            pierceBuilding: true
-            pierceCap: 3
-            impact: true
-            lightning: 8
-            lightningLength: 6
-            lightningLengthRand: 5
-            lightningDamage: 100
+    cooldownTime: 400
+    parentizeEffects: true
 
-            status: disarmed
+    shake: 24
+    shoot: {
+      firstShotDelay: 80
+    }
 
-            smokeEffect: shootSmokeDisperse
-            hitEffect: flakExplosion
-            despawnEffect: hitBulletColor
-            chargeEffect: {
-                type: WaveEffect
-                rotWithParent: true
-                followParent: true
+    bullet: {
+      type: ContinuousLaserBulletType
+      damage: 1200
+      length: 720
+      hitEffect: massiveExplosion
+      drawSize: 420
+      lifetime: 320
 
-                sizeFrom: 60
-                sizeTo: 0
+      splashDamage: 800
+      splashDamageRadius: 100
+      impact: true
 
-                lifetime: 120
+      lightningSpacing: 35
+      lightning: 8
+      lightningDelay: 1.1
+      lightningLength: 6
+      lightningLengthRand: 15
+      lightningDamage: 100
+      lightningAngleRand: 40
+      largeHit: true
 
-                colorFrom: ffffff
-                colorTo: ffffff
-            }
+      lightColor: ffffff
+      lightningColor: ffffff
+      color: ffffff
 
-            shootEffect: {
-                type: WaveEffect
-                lifetime: 50
-                sizeFrom: 40
-                sizeTo: 0
-                strokeFrom:4
-                strokeTo:2
-                colorFrom: ffffff
-                colorTo: ffffff
-            }
-        }
+      status: disarmed
+      statusDuration: 60
+
+      smokeEffect: shootSmokeDisperse
+      hitEffect: flakExplosion
+      despawnEffect: hitBulletColor
+      chargeEffect: greenLaserCharge
+      shootEffect: hitBulletColor
+    }
   }
 ]
 
