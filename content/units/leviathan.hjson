@@ -10,10 +10,10 @@ armor: 35
 
 accel: 0.7
 drag: 0.3
-rotateSpeed: 0.1
+rotateSpeed: 0.3
 
 engineSize: 7
-engineOffset: 80
+engineOffset: 110
 trailLength: 48
 fallSpeed: 0.0018
 
