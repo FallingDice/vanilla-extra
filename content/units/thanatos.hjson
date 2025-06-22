@@ -15,7 +15,7 @@ outlineColor: 2f2f2f
 
 engineSize: 7
 engineOffset: 80
-trailLength: 32
+trailLength: 60
 fallSpeed: 0.0018
 
 parts: [
