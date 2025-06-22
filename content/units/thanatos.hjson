@@ -17,7 +17,7 @@ parts: [
     y: 0
     moveX: 0
     moveY: -2
-    layerOffset: 0.5
+    layerOffset: 0.3
     moves: [
       {
         type: partMove
@@ -37,7 +37,7 @@ parts: [
     y: 0
     moveX: 0
     moveY: -4
-    layerOffset: 0.4
+    layerOffset: 0.2
     moves: [
       {
         type: partMove
@@ -57,7 +57,7 @@ parts: [
     y: 0
     moveX: 2
     moveY: -6
-    layerOffset: 0.3
+    layerOffset: 0.1
     moves: [
       {
         type: partMove
@@ -77,7 +77,7 @@ parts: [
     y: 0
     moveX: 0
     moveY: -8
-    layerOffset: 0.2
+    layerOffset: 0
     moves: [
       {
         type: partMove
@@ -97,7 +97,7 @@ parts: [
     y: 0
     moveX: 0
     moveY: -10
-    layerOffset: 0.1
+    layerOffset: -0.1
     moves: [
       {
         type: partMove
@@ -113,7 +113,7 @@ weapons: [
         name: spear-weapon
         shootSound: none
         mirror: false
-        reload: 30
+        reload: 600
         x: 4
         y:2
         top: false
