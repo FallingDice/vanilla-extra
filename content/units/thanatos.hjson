@@ -8,9 +8,9 @@ speed: 0.1
 health: 2400000
 armor: 20
 
-accel: 0.5
-drag: 0.2
-rotateSpeed: 0.4
+//accel: 0.5
+//drag: 0.2
+rotateSpeed: 0.1
 
 engineSize: 7
 engineOffset: 80
