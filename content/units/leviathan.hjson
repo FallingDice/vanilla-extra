@@ -8,8 +8,8 @@ speed: 0.1
 health: 60000000
 armor: 35
 
-//accel: 0.7
-//drag: 0.3
+accel: 0.7
+drag: 0.3
 rotateSpeed: 0.1
 
 engineSize: 7
