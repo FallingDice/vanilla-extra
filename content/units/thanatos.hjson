@@ -187,7 +187,63 @@ weapons: [
       chargeEffect: greenLaserCharge
       shootEffect: hitBulletColor
     }
-  }
+  },
+  {
+        name: thanatos-center-weapon
+        shootSound: pew
+        mirror: false
+        reload: 80
+        x: 0
+        y:0
+        rotate: true
+        rotateSpeed: 0.5
+        ejectEffect: none
+        recoil: 0
+        shootY: 0
+
+        bullet: {
+            type: BasicBulletType
+            damage: 30
+            speed: 8
+            width: 7
+            height: 9
+            lifetime: 20
+
+            //basic effect
+            shootEffect: none
+            smokeEffect: none
+            hitEffect: hitBulletColor
+            despawnEffect: none
+        }
+    },
+    {
+        name: thanatos-side-weapon
+        shootSound: pew
+        mirror: true
+        reload: 30
+        x: 0
+        y:0
+        rotate: true
+        rotateSpeed: 1.2
+        ejectEffect: none
+        recoil: 0
+        shootY: 0
+
+        bullet: {
+            type: BasicBulletType
+            damage: 30
+            speed: 6
+            width: 7
+            height: 9
+            lifetime: 20
+
+            //basic effect
+            shootEffect: none
+            smokeEffect: none
+            hitEffect: hitBulletColor
+            despawnEffect: none
+        }
+    }
 ]
 
 deathSound: largeExplosion
