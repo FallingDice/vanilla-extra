@@ -20,8 +20,6 @@ engineOffset: 80
 trailLength: 60
 fallSpeed: 0.0018
 
-groundLayer: 90.5
-
 parts: [
   {
     type: RegionPart
@@ -133,7 +131,7 @@ weapons: [
     top: false
     mirror: false
     x: 0
-    y: 50
+    y: 45
     shootY: 0
     ejectEffect: casing4
 
@@ -195,12 +193,27 @@ weapons: [
         y: 0
         color: ffffff
         colorTo: ffffff
-        layer: 110
 
-        radius: 8
+        radius: 7
         radiusTo: 3
-        stroke: 4
+        stroke: 1
         strokeTo: 3
+
+        circle: true
+        hollow: true
+      },
+      {
+        type: shapePart
+        progress: warmup
+        x: 0
+        y: 0
+        color: 000000
+        colorTo: 000000
+
+        radius: 2
+        radiusTo: 0
+        stroke: 1
+        strokeTo: 0
 
         circle: true
         hollow: true
@@ -256,9 +269,9 @@ weapons: [
         name: thanatos-side-weapon
         shootSound: blaster
         mirror: true
-        reload: 60
+        reload: 120
         x: 25
-        y:-45
+        y:-50
         rotate: true
         rotateSpeed: 1.2
         ejectEffect: none
@@ -268,7 +281,7 @@ weapons: [
         shoot: {
           type: ShootSpread
           firstShotDelay: 24
-          shots: 3
+          shots: 6
           shotDelay: 4
           spread: 11
         }
@@ -276,10 +289,10 @@ weapons: [
         bullet: {
             type: MissileBulletType
             damage: 180
-            speed: 10
+            speed: 14
             width: 7
             height: 9
-            lifetime: 30
+            lifetime: 50
             shrinkY: 0
             weaveScale: 8
             weaveMag: 2
