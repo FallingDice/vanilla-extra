@@ -194,7 +194,7 @@ weapons: [
         mirror: false
         reload: 80
         x: 0
-        y:0
+        y:-20
         rotate: true
         rotateSpeed: 0.5
         ejectEffect: none
@@ -221,8 +221,8 @@ weapons: [
         shootSound: pew
         mirror: true
         reload: 30
-        x: 0
-        y:0
+        x: 40
+        y:-20
         rotate: true
         rotateSpeed: 1.2
         ejectEffect: none
