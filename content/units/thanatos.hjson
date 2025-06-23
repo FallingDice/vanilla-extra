@@ -133,8 +133,8 @@ weapons: [
     top: false
     mirror: false
     x: 0
-    y: 0
-    shootY: 15
+    y: 20
+    shootY: 0
     ejectEffect: casing4
 
     reload: 500
@@ -186,6 +186,26 @@ weapons: [
       chargeEffect: greenLaserCharge
       shootEffect: hitBulletColor
     }
+
+    parts: [
+      {
+        type: shapePart
+        progress: warmup
+        x: 0
+        y: 0
+        color: ffffff
+        colorTo: ffffff
+        layer: 110
+
+        radius: 20
+        radiusTo: 30
+        stroke: 5
+        strokeTo: 10
+
+        circle: true
+        hollow: true
+      }
+    ]
   },
   {
         name: thanatos-center-weapon
@@ -219,7 +239,7 @@ weapons: [
           {
             type: RegionPart
             progress: warmup
-            blending: normal
+            blending: additive
             suffix: -neon
             mirror: false
             x: 0
@@ -227,8 +247,8 @@ weapons: [
             moveX: 0
             moveY: 0
             layerOffset: 0.1
-            color: 00000000
-            colorTo: ffffffff
+            color: 000000
+            colorTo: ffffff
           }
         ]
     },
@@ -238,7 +258,7 @@ weapons: [
         mirror: true
         reload: 60
         x: 25
-        y:-40
+        y:-45
         rotate: true
         rotateSpeed: 1.2
         ejectEffect: none
