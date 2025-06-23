@@ -196,7 +196,7 @@ weapons: [
 
         radius: 7
         radiusTo: 3
-        stroke: 1
+        stroke: 2
         strokeTo: 3
 
         circle: true
