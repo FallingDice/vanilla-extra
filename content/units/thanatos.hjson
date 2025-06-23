@@ -12,6 +12,7 @@ accel: 0.5
 drag: 0.2
 rotateSpeed: 0.1
 outlineColor: 2f2f2f
+lowAltitude: true
 
 engineSize: 7
 engineOffset: 80
@@ -194,7 +195,7 @@ weapons: [
         mirror: false
         reload: 80
         x: 0
-        y:-20
+        y:-25
         rotate: true
         rotateSpeed: 0.5
         ejectEffect: none
@@ -215,14 +216,31 @@ weapons: [
             hitEffect: hitBulletColor
             despawnEffect: none
         }
+
+        parts: [
+          {
+            type: RegionPart
+            progress: warmup
+            blending: additive
+            suffix: -neon
+            mirror: false
+            x: 0
+            y: 0
+            moveX: 0
+            moveY: 0
+            layerOffset: 0.1
+            color: 000000
+            colorTo: ffffff
+          }
+        ]
     },
     {
         name: thanatos-side-weapon
         shootSound: pew
         mirror: true
         reload: 30
-        x: 40
-        y:-20
+        x: 25
+        y:-40
         rotate: true
         rotateSpeed: 1.2
         ejectEffect: none
