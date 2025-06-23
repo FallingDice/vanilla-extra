@@ -201,22 +201,6 @@ weapons: [
 
         circle: true
         hollow: true
-      },
-      {
-        type: shapePart
-        progress: warmup
-        x: 0
-        y: 0
-        color: 000000
-        colorTo: 000000
-
-        radius: 2
-        radiusTo: 0
-        stroke: 1
-        strokeTo: 0
-
-        circle: true
-        hollow: true
       }
     ]
   },
