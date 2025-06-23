@@ -20,13 +20,12 @@ engineOffset: 80
 trailLength: 60
 fallSpeed: 0.0018
 
-layerOffset: 0.5
+groundLayer: 90.5
 
 parts: [
   {
     type: RegionPart
     progress: warmup
-    growProgress: warmup
     suffix: -parts1
     mirror: true
     under: false
@@ -46,7 +45,6 @@ parts: [
   {
     type: RegionPart
     progress: warmup
-    growProgress: warmup
     suffix: -parts2
     mirror: true
     under: false
@@ -66,7 +64,6 @@ parts: [
   {
     type: RegionPart
     progress: warmup
-    growProgress: warmup
     suffix: -parts3
     mirror: true
     under: false
@@ -86,7 +83,6 @@ parts: [
   {
     type: RegionPart
     progress: warmup
-    growProgress: warmup
     suffix: -parts4
     mirror: true
     under: false
@@ -106,7 +102,6 @@ parts: [
   {
     type: RegionPart
     progress: warmup
-    growProgress: warmup
     suffix: -parts5
     mirror: true
     under: false
@@ -224,7 +219,7 @@ weapons: [
           {
             type: RegionPart
             progress: warmup
-            blending: additive
+            blending: normal
             suffix: -neon
             mirror: false
             x: 0
@@ -234,6 +229,8 @@ weapons: [
             layerOffset: 0.1
             color: 00000000
             colorTo: ffffffff
+
+            outlines: false
           }
         ]
     },
