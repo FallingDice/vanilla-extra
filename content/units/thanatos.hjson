@@ -13,11 +13,14 @@ drag: 0.2
 rotateSpeed: 0.1
 outlineColor: 2f2f2f
 lowAltitude: true
+forceMultiTarget: true
 
 engineSize: 7
 engineOffset: 80
 trailLength: 60
 fallSpeed: 0.0018
+
+layerOffset: 0.5
 
 parts: [
   {
@@ -229,16 +232,16 @@ weapons: [
             moveX: 0
             moveY: 0
             layerOffset: 0.1
-            color: 000000
-            colorTo: ffffff
+            color: 00000000
+            colorTo: ffffffff
           }
         ]
     },
     {
         name: thanatos-side-weapon
-        shootSound: pew
+        shootSound: blaster
         mirror: true
-        reload: 30
+        reload: 60
         x: 25
         y:-40
         rotate: true
@@ -247,19 +250,40 @@ weapons: [
         recoil: 0
         shootY: 0
 
+        shoot: {
+          type: ShootSpread
+          firstShotDelay: 24
+          shots: 3
+          shotDelay: 4
+          spread: 11
+        }
+
         bullet: {
-            type: BasicBulletType
-            damage: 30
-            speed: 6
+            type: MissileBulletType
+            damage: 180
+            speed: 10
             width: 7
             height: 9
-            lifetime: 20
+            lifetime: 30
+            shrinkY: 0
+            weaveScale: 8
+            weaveMag: 2
+
+            homingRange: 180
+            homingPower: 0.2
+            homingDelay: 12
+
+            splashDamageRadius: 30
+            splashDamage: 60
+
+            trailWidth: 2.5
+            trailLength: 10
 
             //basic effect
-            shootEffect: none
-            smokeEffect: none
-            hitEffect: hitBulletColor
-            despawnEffect: none
+            shootEffect: sparkShoot
+            smokeEffect: shootBigSmoke
+            hitEffect: blastExplosion
+            despawnEffect: blastExplosion
         }
     }
 ]
