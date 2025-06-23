@@ -133,7 +133,7 @@ weapons: [
     top: false
     mirror: false
     x: 0
-    y: 30
+    y: 50
     shootY: 0
     ejectEffect: casing4
 
@@ -197,9 +197,9 @@ weapons: [
         colorTo: ffffff
         layer: 110
 
-        radius: 5
+        radius: 8
         radiusTo: 3
-        stroke: 2
+        stroke: 4
         strokeTo: 3
 
         circle: true
