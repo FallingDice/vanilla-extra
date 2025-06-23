@@ -229,8 +229,6 @@ weapons: [
             layerOffset: 0.1
             color: 00000000
             colorTo: ffffffff
-
-            outlines: false
           }
         ]
     },
