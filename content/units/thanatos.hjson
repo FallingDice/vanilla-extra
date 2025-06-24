@@ -138,8 +138,8 @@ parts: [
             moveX: 0
             moveY: 0
             layerOffset: 0.07
-            color: 000000
-            colorTo: f1545470
+            color: 00000000
+            colorTo: f1545440
 
             outline: false
           }
@@ -171,6 +171,9 @@ weapons: [
 
     cooldownTime: 400
     parentizeEffects: true
+
+    shootWarmupSpeed: 0.06
+    minWarmup: 0.9
 
     shake: 24
     shoot: {
@@ -289,7 +292,7 @@ weapons: [
           {
             type: RegionPart
             progress: warmup
-            blending: additive
+            blending: normal
             suffix: -neon
             mirror: false
             x: 0
@@ -297,8 +300,8 @@ weapons: [
             moveX: 0
             moveY: 0
             layerOffset: 0.1
-            color: 000000
-            colorTo: ffffff
+            color: 00000000
+            colorTo: f15454ff
 
             outline: false
           }
