@@ -137,7 +137,7 @@ parts: [
             y: 0
             moveX: 0
             moveY: 0
-            layerOffset: 0.9
+            layerOffset: 0.05
             color: 000000
             colorTo: f15454
 
@@ -251,6 +251,8 @@ weapons: [
         pierce: true
         pierceBuilding: true
 
+        layerOffset: 0.08
+
         bullet: {
             type: BasicBulletType
             damage: 300
@@ -314,6 +316,8 @@ weapons: [
         ejectEffect: none
         recoil: 0
         shootY: 0
+
+        layerOffset: 0.08
 
         shoot: {
           type: ShootSpread
