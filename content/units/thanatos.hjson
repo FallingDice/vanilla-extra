@@ -457,10 +457,10 @@ weapons: [
             moveX: 10
             moveY: -5
             moveRot: -45
-            layerOffset: -0.02
+            layerOffset: -0.01
 
             growX: 0
-            growY: 0.2
+            growY: 0.1
 
             children: [
               {
@@ -472,9 +472,9 @@ weapons: [
                 }
 
                 suffix: -wing1
-                moveRot: -120
-                moveX: 20
-                moveY: -10
+                moveRot: 10
+                moveX: 40
+                moveY: 20
 
                 growProgress: warmup
                 growX: 0
@@ -489,9 +489,9 @@ weapons: [
                 }
 
                 suffix: -wing2
-                moveRot: -115
-                moveX: 40
-                moveY: -20
+                moveRot: 20
+                moveX: 80
+                moveY: 40
 
                 growProgress: warmup
                 growX: 0.1
@@ -506,9 +506,9 @@ weapons: [
                 }
 
                 suffix: -wing3
-                moveRot: -150
-                moveX: 60
-                moveY: -30
+                moveRot: 30
+                moveX: 120
+                moveY: 60
 
                 growProgress: warmup
                 growX: 0.2
