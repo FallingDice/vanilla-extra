@@ -384,7 +384,7 @@ weapons: [
       shootSound: blaster
       mirror: true
       reload: 180
-        x: 25
+        x: 35
         y:-30
         rotate: false
         ejectEffect: none
@@ -437,13 +437,13 @@ weapons: [
             mirror: false
             x: 0
             y: 0
-            moveX: 25
+            moveX: 10
             moveY: 5
             moveRot: -45
             layerOffset: -0.01
 
-            growX: 1
-            growY: 4
+            growX: 0.1
+            growY: 0.4
 
             moves: [
               {
