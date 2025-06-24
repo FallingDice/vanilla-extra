@@ -467,19 +467,15 @@ weapons: [
                 type: partMove
                 progress: recoil
                 rot: 0
-                x: 10
-                y: 10
+                x: 1
+                y: 1
               }
             ]
 
             children: [
               {
                 type: RegionPart
-                progress: {
-                  type: warmup
-                  op: delay
-                  amount: 0.3
-                }
+                progress: warmup
                 suffix: -wing1
                 moveRot: 30
                 moveX: 1
@@ -500,7 +496,7 @@ weapons: [
               {
                 type: RegionPart
                 progress: {
-                  type: warmup
+                  type: charge
                   op: delay
                   amount: 0.9
                 }
