@@ -380,15 +380,17 @@ weapons: [
         }
     },
     {
+      name: thanatos-sub-weapon
       shootSound: blaster
       mirror: true
       reload: 180
-        x: 30
+        x: 25
         y:-30
         rotate: false
         ejectEffect: none
         recoil: 0
-        shootY: 0
+        shootX: 25
+        shootY: 5
         cooldownTime: 80
 
         shoot: {
@@ -431,11 +433,11 @@ weapons: [
             type: RegionPart
             progress: warmup
             growProgress: warmup
-            suffix: -sub-weapon
+            suffix: -blade
             mirror: false
             x: 0
             y: 0
-            moveX: 20
+            moveX: 25
             moveY: 5
             moveRot: -45
             layerOffset: -0.01
