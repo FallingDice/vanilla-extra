@@ -194,9 +194,9 @@ weapons: [
         color: ffffff
         colorTo: ffffff
 
-        radius: 7
-        radiusTo: 3
-        stroke: 2
+        radius: 8
+        radiusTo: 8
+        stroke: 3
         strokeTo: 3
 
         circle: true
@@ -255,7 +255,7 @@ weapons: [
         mirror: true
         reload: 120
         x: 25
-        y:-50
+        y:-53
         rotate: true
         rotateSpeed: 1.2
         ejectEffect: none
