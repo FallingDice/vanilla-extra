@@ -165,14 +165,14 @@ weapons: [
       lightningSpacing: 35
       lightning: 8
       lightningDelay: 1.1
-      lightningLength: 6
-      lightningLengthRand: 15
+      lightningLength: 3
+      lightningLengthRand: 6
       lightningDamage: 100
       lightningAngleRand: 40
       largeHit: true
 
-      lightColor: ffffff
-      lightningColor: ffffff
+      lightColor: f15454
+      lightningColor: f15454
       color: ffffff
 
       status: disarmed
@@ -192,12 +192,12 @@ weapons: [
         x: 0
         y: 0
         color: ffffff
-        colorTo: ffffff
+        colorTo: f15454
 
         radius: 8
         radiusTo: 6
         stroke: 1
-        strokeTo: 3
+        strokeTo: 1
 
         circle: true
         hollow: true
@@ -208,9 +208,9 @@ weapons: [
   },
   {
         name: thanatos-center-weapon
-        shootSound: pew
+        shootSound: cannon
         mirror: false
-        reload: 80
+        reload: 40
         x: 0
         y:-25
         rotate: true
@@ -221,17 +221,31 @@ weapons: [
 
         bullet: {
             type: BasicBulletType
-            damage: 30
-            speed: 8
-            width: 7
-            height: 9
-            lifetime: 20
+            damage: 300
+            speed: 20
+            width: 24
+            height: 46
+            lifetime: 30
+
+            homingRange: 120
+            homingPower: 0.25
+            homingDelay: 4
+
+            splashDamageRadius: 30
+            splashDamage: 120
+
+            trailWidth: 4
+            trailLength: 20
+
+            color: ffffff
+            colorTo: f15454
+            trailColor: f15454
 
             //basic effect
-            shootEffect: none
-            smokeEffect: none
+            shootEffect: sparkShoot
+            smokeEffect: shootBigSmoke
             hitEffect: hitBulletColor
-            despawnEffect: none
+            despawnEffect: blastExplosion
         }
 
         parts: [
@@ -293,6 +307,10 @@ weapons: [
             trailWidth: 2.5
             trailLength: 10
 
+            color: ffffff
+            colorTo: f15454
+            trailColor: f15454
+
             //basic effect
             shootEffect: sparkShoot
             smokeEffect: shootBigSmoke
@@ -313,8 +331,8 @@ deathExplosionEffect: [
     lifetime: 15
     sizeFrom: 1.2
     sizeTo: 0
-    colorFrom: ff8f0070
-    colorTo: ff8f0000
+    colorFrom: f15454
+    colorTo: f1545400
     },
     {
     type: ParticleEffect
@@ -325,7 +343,7 @@ deathExplosionEffect: [
     lifetime: 15
     sizeFrom: 2
     sizeTo: 0
-    colorFrom: ff600070
-    colorTo: ff600000
+    colorFrom: f15454
+    colorTo: f1545400
     }
 ]
