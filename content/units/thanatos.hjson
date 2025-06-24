@@ -228,8 +228,8 @@ weapons: [
         rotate: true
         rotateSpeed: 0.5
         ejectEffect: none
-        recoil: 0
-        shootY: 10
+        recoil: 2
+        shootY: 15
 
         pierceCap: 6
         pierce: true
