@@ -107,7 +107,9 @@ parts: [
     y: 0
     moveX: 0
     moveY: -5
-    layerOffset: 0
+    layerOffset: -0.1
+
+    outline: false
     moves: [
       {
         type: partMove
@@ -173,7 +175,7 @@ weapons: [
 
       lightColor: f15454
       lightningColor: f15454
-      color: ffffff
+      color: f15454
 
       status: disarmed
       statusDuration: 60
@@ -191,8 +193,8 @@ weapons: [
         progress: warmup
         x: 0
         y: 0
-        color: ffffff
-        colorTo: f15454
+        color: f15454
+        colorTo: ffffff
 
         radius: 8
         radiusTo: 6
@@ -217,7 +219,7 @@ weapons: [
         rotateSpeed: 0.5
         ejectEffect: none
         recoil: 0
-        shootY: 0
+        shootY: 10
 
         bullet: {
             type: BasicBulletType
