@@ -456,7 +456,7 @@ weapons: [
             y: 0
             moveX: 10
             moveY: -5
-            moveRot: -45
+            moveRot: -20
             layerOffset: -0.01
 
             growX: 0
@@ -468,18 +468,21 @@ weapons: [
                 progress: {
                   type: warmup
                   op: delay
-                  amount: 0.25
+                  amount: 0.75
                 }
 
                 suffix: -wing1
-                moveRot: 10
+                moveRot: 20
                 moveX: 40
                 moveY: 20
-                rotate: true
 
-                growProgress: warmup
-                growX: 0
-                growY: 0
+                moves: [
+                  {
+                    type: partMove
+                    progress: recoil
+                    y: -2
+                  }
+                ]
               },
               {
                 type: RegionPart
@@ -494,30 +497,96 @@ weapons: [
                 moveX: 80
                 moveY: 40
 
-                growProgress: warmup
-                growX: 0.1
-                growY: 0.1
+                moves: [
+                  {
+                    type: partMove
+                    progress: recoil
+                    y: -2
+                  }
+                ]
               },
               {
                 type: RegionPart
                 progress: {
                   type: warmup
                   op: delay
-                  amount: 0.75
+                  amount: 0.25
                 }
 
                 suffix: -wing3
-                moveRot: 30
+                moveRot: 20
                 moveX: 120
                 moveY: 60
 
-                growProgress: warmup
-                growX: 0.2
-                growY: 0.2
+                moves: [
+                  {
+                    type: partMove
+                    progress: recoil
+                    y: -2
+                  }
+                ]
               }
             ]
           }
         ]
+    },
+    {
+      shootSound: largeCannon
+      mirror: true
+      reload: 30
+        x: 50
+        y:-35
+        rotate: false
+        ejectEffect: none
+        recoil: 0
+        alternate: true
+
+        shoot: {
+          type: shootBarrel
+          firstShotDelay: 4
+          shots: 3
+          shotDelay: 6
+          barrels: [
+            40, 20, 0,
+            80, 40, 0,
+            120, 60, 0
+          ]
+        }
+
+        bullet: {
+            type: MissileBulletType
+            damage: 60
+            speed: 16
+            width: 7
+            height: 9
+            lifetime: 50
+            shrinkY: 0
+
+            splashDamageRadius: 10
+            splashDamage: 20
+
+            trailWidth: 1.5
+            trailLength: 7
+
+            homingRange: 40
+            homingPower: 0.1
+            homingDelay: 12
+
+            splashDamageRadius: 10
+            splashDamage: 30
+
+            frontColor: ffffff
+            backColor: f15454
+            trailColor: f15454
+
+            shake: 2
+
+            //basic effect
+            shootEffect: sparkShoot
+            smokeEffect: shootBigSmoke
+            hitEffect: blastExplosion
+            despawnEffect: blastExplosion
+        }
     }
 ]
 
