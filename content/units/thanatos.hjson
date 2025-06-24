@@ -378,6 +378,82 @@ weapons: [
             hitEffect: blastExplosion
             despawnEffect: blastExplosion
         }
+    },
+    {
+      shootSound: blaster
+      mirror: true
+      reload: 180
+        x: 50
+        y:-30
+        rotate: false
+        ejectEffect: none
+        recoil: 0
+        shootY: 0
+        cooldownTime: 80
+
+        shoot: {
+          type: ShootSpread
+          firstShotDelay: 12
+          shots: 9
+          shotDelay: 8
+          spread: 30
+        }
+
+        bullet: {
+            type: MissileBulletType
+            damage: 60
+            speed: 16
+            width: 7
+            height: 9
+            lifetime: 50
+
+            splashDamageRadius: 10
+            splashDamage: 20
+
+            trailWidth: 1.5
+            trailLength: 7
+
+            frontColor: ffffff
+            backColor: f15454
+            trailColor: f15454
+
+            shake: 2
+
+            //basic effect
+            shootEffect: sparkShoot
+            smokeEffect: shootBigSmoke
+            hitEffect: blastExplosion
+            despawnEffect: blastExplosion
+        }
+
+        parts: [
+          {
+            type: RegionPart
+            progress: warmup
+            growProgress: warmup
+            suffix: -sub-weapon
+            mirror: false
+            x: 0
+            y: 0
+            moveX: 5
+            moveY: -3
+            moveRot: -45
+            layerOffset: -0.01
+
+            growX: 1
+            growY: 4
+
+            moves: [
+              {
+                type: partMove
+                progress: recoil
+                rot: 0
+                x: 10
+                y: 10
+              }
+            ]
+          }
+        ]
     }
 ]
 
