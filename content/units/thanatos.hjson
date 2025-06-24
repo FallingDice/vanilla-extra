@@ -475,12 +475,6 @@ weapons: [
                 moveRot: 20
                 moveX: 40
                 moveY: 20
-
-                moves: [
-                  {
-                    type: partMove
-                    progress: recoil
-                    y: -2
                   }
                 ]
               },
@@ -494,16 +488,8 @@ weapons: [
 
                 suffix: -wing2
                 moveRot: 20
-                moveX: 80
-                moveY: 40
-
-                moves: [
-                  {
-                    type: partMove
-                    progress: recoil
-                    y: -2
-                  }
-                ]
+                moveX: 60
+                moveY: 43
               },
               {
                 type: RegionPart
@@ -515,16 +501,8 @@ weapons: [
 
                 suffix: -wing3
                 moveRot: 20
-                moveX: 120
-                moveY: 60
-
-                moves: [
-                  {
-                    type: partMove
-                    progress: recoil
-                    y: -2
-                  }
-                ]
+                moveX: 80
+                moveY: 66
               }
             ]
           }
@@ -548,8 +526,8 @@ weapons: [
           shotDelay: 6
           barrels: [
             40, 20, 0,
-            80, 40, 0,
-            120, 60, 0
+            60, 40, 0,
+            80, 60, 0
           ]
         }
 
