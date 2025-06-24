@@ -389,7 +389,7 @@ weapons: [
       shootSound: blaster
       mirror: true
       reload: 180
-        x: 35
+        x: 40
         y:-30
         rotate: false
         ejectEffect: none
@@ -397,14 +397,14 @@ weapons: [
         shootX: 0
         shootY: 0
         cooldownTime: 80
-        alternate: true
+        alternate: false
         inaccuracy: 10
 
         layerOffset: -0.01
 
         shoot: {
           type: ShootSpread
-          firstShotDelay: 12
+          firstShotDelay: 24
           shots: 9
           shotDelay: 6
           spread: 11
@@ -455,7 +455,7 @@ weapons: [
             x: 0
             y: 0
             moveX: 10
-            moveY: 5
+            moveY: -5
             moveRot: -45
             layerOffset: -0.02
 
@@ -469,6 +469,45 @@ weapons: [
                 rot: 0
                 x: 10
                 y: 10
+              }
+            ]
+
+            children: [
+              {
+                type: RegionPart
+                progress: {
+                  type: charge
+                  op: delay
+                  amount: 0.3
+                }
+                suffix: -wing1
+                moveRot: 30
+                moveX: 1
+                moveY: 1
+              },
+              {
+                type: RegionPart
+                progress: {
+                  type: charge
+                  op: delay
+                  amount: 0.6
+                }
+                suffix: -wing2
+                moveRot: 45
+                moveX: 3
+                moveY: 3
+              },
+              {
+                type: RegionPart
+                progress: {
+                  type: charge
+                  op: delay
+                  amount: 0.9
+                }
+                suffix: -wing3
+                moveRot: 60
+                moveX: 7
+                moveY: 7
               }
             ]
           }
