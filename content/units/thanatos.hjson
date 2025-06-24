@@ -480,7 +480,7 @@ weapons: [
                   op: delay
                   amount: 0.2
                 }
-                suffix: blade-wing1
+                suffix: wing1
                 moveRot: 30
                 moveX: 3
                 moveY: 3
@@ -501,7 +501,7 @@ weapons: [
                   op: delay
                   amount: 0.6
                 }
-                suffix: blade-wing2
+                suffix: wing2
                 moveRot: 45
                 moveX: 9
                 moveY: 9
@@ -522,7 +522,7 @@ weapons: [
                   op: delay
                   amount: 0.9
                 }
-                suffix: blade-wing3
+                suffix: wing3
                 moveRot: 60
                 moveX: 15
                 moveY: 15
