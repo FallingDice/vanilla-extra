@@ -475,11 +475,24 @@ weapons: [
             children: [
               {
                 type: RegionPart
-                progress: warmup
-                suffix: -wing1
+                progress: {
+                  type: warmup
+                  op: delay
+                  amount: 0.2
+                }
+                suffix: blade-wing1
                 moveRot: 30
-                moveX: 1
-                moveY: 1
+                moveX: 3
+                moveY: 3
+                moves: [
+                  {
+                    type: partMove
+                    progress: recoil
+                    rot: 0
+                    x: 1
+                    y: 1
+                  }
+                ]
               },
               {
                 type: RegionPart
@@ -488,22 +501,40 @@ weapons: [
                   op: delay
                   amount: 0.6
                 }
-                suffix: -wing2
+                suffix: blade-wing2
                 moveRot: 45
-                moveX: 3
-                moveY: 3
+                moveX: 9
+                moveY: 9
+                moves: [
+                  {
+                    type: partMove
+                    progress: recoil
+                    rot: 0
+                    x: 1
+                    y: 1
+                  }
+                ]
               },
               {
                 type: RegionPart
                 progress: {
-                  type: charge
+                  type: warmup
                   op: delay
                   amount: 0.9
                 }
-                suffix: -wing3
+                suffix: blade-wing3
                 moveRot: 60
-                moveX: 7
-                moveY: 7
+                moveX: 15
+                moveY: 15
+                moves: [
+                  {
+                    type: partMove
+                    progress: recoil
+                    rot: 0
+                    x: 1
+                    y: 1
+                  }
+                ]
               }
             ]
           }
