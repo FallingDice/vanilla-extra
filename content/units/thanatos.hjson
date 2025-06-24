@@ -139,7 +139,7 @@ parts: [
             moveY: 0
             layerOffset: 0.07
             color: 00000000
-            colorTo: f1545440
+            colorTo: f1545470
 
             outline: false
           }
@@ -248,7 +248,7 @@ weapons: [
         rotateSpeed: 0.5
         ejectEffect: none
         recoil: 2
-        shootY: 15
+        shootY: 18
 
         pierceCap: 6
         pierce: true
