@@ -107,9 +107,7 @@ parts: [
     y: 0
     moveX: 0
     moveY: -5
-    layerOffset: -0.1
-
-    outline: false
+    layerOffset: 0
     moves: [
       {
         type: partMove
@@ -117,6 +115,17 @@ parts: [
         y: 10
       }
     ]
+  },
+  {
+    type: RegionPart
+    progress: warmup
+    suffix: -plate
+    mirror: false
+    under: false
+    x: 0
+    y: 0
+    layerOffset: 0.4
+    outline: false
   }
 ]
 
