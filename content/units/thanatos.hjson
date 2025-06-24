@@ -139,7 +139,7 @@ parts: [
             moveY: 0
             layerOffset: 0.07
             color: 000000
-            colorTo: f15454
+            colorTo: f1545470
 
             outline: false
           }
