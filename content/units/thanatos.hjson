@@ -188,7 +188,7 @@ weapons: [
       drawSize: 420
       lifetime: 320
 
-      splashDamage: 400
+      splashDamage: 480
       splashDamageRadius: 20
       impact: true
 
@@ -241,7 +241,7 @@ weapons: [
         name: thanatos-center-weapon
         shootSound: shootBig
         mirror: false
-        reload: 40
+        reload: 30
         x: 0
         y:-25
         rotate: true
@@ -262,14 +262,14 @@ weapons: [
             speed: 20
             width: 24
             height: 46
-            lifetime: 30
+            lifetime: 35
 
             homingRange: 120
             homingPower: 0.25
-            homingDelay: 4
+            homingDelay: 8
 
-            splashDamageRadius: 30
-            splashDamage: 160
+            splashDamageRadius: 80
+            splashDamage: 320
 
             trailWidth: 4
             trailLength: 20
