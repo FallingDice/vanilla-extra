@@ -482,7 +482,7 @@ weapons: [
                 }
 
                 suffix: -wing1
-                moveRot: -30
+                moveRot: 30
                 moveX: 40
                 moveY: 0
 
@@ -509,7 +509,7 @@ weapons: [
                 }
 
                 suffix: -wing2
-                moveRot: -45
+                moveRot: 45
                 moveX: 80
                 moveY: -10
 
@@ -536,7 +536,7 @@ weapons: [
                 }
 
                 suffix: -wing3
-                moveRot: -60
+                moveRot: 60
                 moveX: 120
                 moveY: -20
 
