@@ -292,7 +292,7 @@ weapons: [
           {
             type: RegionPart
             progress: warmup
-            blending: normal
+            blending: additive
             suffix: -neon
             mirror: false
             x: 0
