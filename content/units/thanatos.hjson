@@ -333,16 +333,21 @@ weapons: [
         rotateSpeed: 1.2
         ejectEffect: none
         recoil: 0
-        shootY: 0
+        shootY: 1
 
         layerOffset: 0.08
 
         shoot: {
-          type: ShootSpread
+          type: shootBarrel
           firstShotDelay: 24
           shots: 6
           shotDelay: 4
           spread: 11
+          barrels: [
+            -2, 1, 0, 2, 1, 0,
+            -2, 0, 0, 2, 0, 0,
+            -2, -1, 0, 2, -1, 0
+          ]
         }
 
         bullet: {
@@ -389,9 +394,11 @@ weapons: [
         rotate: false
         ejectEffect: none
         recoil: 0
-        shootX: 25
-        shootY: 5
+        shootX: 0
+        shootY: 0
         cooldownTime: 80
+
+        layerOffset: -0.01
 
         shoot: {
           type: ShootSpread
@@ -440,10 +447,10 @@ weapons: [
             moveX: 10
             moveY: 5
             moveRot: -45
-            layerOffset: -0.01
+            layerOffset: -0.02
 
             growX: 0.1
-            growY: 0.4
+            growY: 0.3
 
             moves: [
               {
