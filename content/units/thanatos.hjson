@@ -17,7 +17,7 @@ forceMultiTarget: true
 
 engineSize: 7
 engineOffset: 80
-trailLength: 60
+trailLength: 180
 fallSpeed: 0.0018
 
 parts: [

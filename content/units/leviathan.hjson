@@ -14,7 +14,7 @@ rotateSpeed: 0.1
 
 engineSize: 7
 engineOffset: 110
-trailLength: 90
+trailLength: 270
 fallSpeed: 0.0018
 
 immunities: [
