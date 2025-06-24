@@ -126,7 +126,23 @@ parts: [
     y: 0
     layerOffset: 0.6
     outline: false
-  }
+  },
+          {
+            type: RegionPart
+            progress: warmup
+            blending: additive
+            suffix: -glow
+            mirror: false
+            x: 0
+            y: 0
+            moveX: 0
+            moveY: 0
+            layerOffset: 0.9
+            color: 000000
+            colorTo: ffffff
+
+            outline: false
+          }
 ]
 
 immunities: [
