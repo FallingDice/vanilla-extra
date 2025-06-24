@@ -478,17 +478,23 @@ weapons: [
                 progress: {
                   type: warmup
                   op: delay
-                  amount: 0.2
+                  amount: 0.33
                 }
+
                 suffix: -wing1
                 moveRot: 30
-                moveX: 3
+                moveX: 20
                 moveY: 0
+
+                growProgress: warmup
+                growX: 0.1
+                growY: 0.1
+
                 moves: [
                   {
                     type: partMove
                     progress: recoil
-                    rot: 0
+                    rot: 5
                     x: 1
                     y: 1
                   }
@@ -499,17 +505,23 @@ weapons: [
                 progress: {
                   type: warmup
                   op: delay
-                  amount: 0.6
+                  amount: 0.66
                 }
+
                 suffix: -wing2
                 moveRot: 45
-                moveX: 9
-                moveY: 0
+                moveX: 40
+                moveY: -10
+
+                growProgress: warmup
+                growX: 0.2
+                growY: 0.2
+
                 moves: [
                   {
                     type: partMove
                     progress: recoil
-                    rot: 0
+                    rot: 10
                     x: 1
                     y: 1
                   }
@@ -520,17 +532,23 @@ weapons: [
                 progress: {
                   type: warmup
                   op: delay
-                  amount: 0.9
+                  amount: 1
                 }
+
                 suffix: -wing3
                 moveRot: 60
-                moveX: 15
-                moveY: 0
+                moveX: 80
+                moveY: -20
+
+                growProgress: warmup
+                growX: 0.3
+                growY: 0.3
+
                 moves: [
                   {
                     type: partMove
                     progress: recoil
-                    rot: 0
+                    rot: 15
                     x: 1
                     y: 1
                   }
