@@ -416,7 +416,7 @@ weapons: [
             speed: 16
             width: 7
             height: 9
-            lifetime: 50
+            lifetime: 100
             shrinkY: 0
 
             splashDamageRadius: 10
@@ -438,9 +438,10 @@ weapons: [
 
             shake: 2
 
-            shootWarmupSpeed: 0.05
+            shootWarmupSpeed: 0.01
             minWarmup: 0.9
             warmupMaintainTime: 300
+            smoothReloadSpeed: 0.01
 
             //basic effect
             shootEffect: sparkShoot
@@ -539,7 +540,7 @@ weapons: [
             speed: 16
             width: 7
             height: 9
-            lifetime: 50
+            lifetime: 100
             shrinkY: 0
 
             splashDamageRadius: 10
@@ -561,9 +562,10 @@ weapons: [
 
             shake: 2
 
-            shootWarmupSpeed: 0.05
+            shootWarmupSpeed: 0.01
             minWarmup: 0.9
             warmupMaintainTime: 300
+            smoothReloadSpeed: 0.01
 
             //basic effect
             shootEffect: sparkShoot
