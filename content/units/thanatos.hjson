@@ -32,7 +32,6 @@ parts: [
     moveX: 0
     moveY: -1
     layerOffset: 0.5
-    outline: false
     moves: [
       {
         type: partMove
@@ -52,7 +51,6 @@ parts: [
     moveX: 1
     moveY: -2
     layerOffset: 0.4
-    outline: false
     moves: [
       {
         type: partMove
@@ -72,7 +70,6 @@ parts: [
     moveX: 0
     moveY: -3
     layerOffset: 0.3
-    outline: false
     moves: [
       {
         type: partMove
@@ -92,7 +89,6 @@ parts: [
     moveX: 0
     moveY: -4
     layerOffset: 0.2
-    outline: false
     moves: [
       {
         type: partMove
@@ -112,7 +108,6 @@ parts: [
     moveX: 0
     moveY: -5
     layerOffset: 0.1
-    outline: false
     moves: [
       {
         type: partMove
