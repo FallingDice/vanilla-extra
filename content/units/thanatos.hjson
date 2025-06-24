@@ -195,12 +195,14 @@ weapons: [
         colorTo: ffffff
 
         radius: 8
-        radiusTo: 8
-        stroke: 3
+        radiusTo: 6
+        stroke: 1
         strokeTo: 3
 
         circle: true
         hollow: true
+
+        layer: 120
       }
     ]
   },
