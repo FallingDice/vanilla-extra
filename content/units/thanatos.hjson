@@ -478,12 +478,12 @@ weapons: [
                 progress: {
                   type: warmup
                   op: delay
-                  amount: 0.33
+                  amount: 0.25
                 }
 
                 suffix: -wing1
                 moveRot: 30
-                moveX: -40
+                moveX: 40
                 moveY: -20
 
                 growProgress: warmup
@@ -505,12 +505,12 @@ weapons: [
                 progress: {
                   type: warmup
                   op: delay
-                  amount: 0.66
+                  amount: 0.5
                 }
 
                 suffix: -wing2
                 moveRot: 30
-                moveX: -80
+                moveX: 80
                 moveY: -40
 
                 growProgress: warmup
@@ -521,7 +521,7 @@ weapons: [
                   {
                     type: partMove
                     progress: recoil
-                    rot: 45
+                    rot: 10
                     x: 1
                     y: 1
                   }
@@ -532,12 +532,12 @@ weapons: [
                 progress: {
                   type: warmup
                   op: delay
-                  amount: 1
+                  amount: 0.75
                 }
 
                 suffix: -wing3
                 moveRot: 60
-                moveX: -120
+                moveX: 120
                 moveY: -60
 
                 growProgress: warmup
