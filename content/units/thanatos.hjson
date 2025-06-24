@@ -344,9 +344,9 @@ weapons: [
           shotDelay: 4
           spread: 11
           barrels: [
-            -2, 1, 0, 2, 1, 0,
-            -2, 0, 0, 2, 0, 0,
-            -2, -1, 0, 2, -1, 0
+            -4, 1.5, 0, 4, 1.5, 0,
+            -4, 0, 0, 4, 0, 0,
+            -4, -1.5, 0, 4, -1.5, 0
           ]
         }
 
@@ -397,6 +397,8 @@ weapons: [
         shootX: 0
         shootY: 0
         cooldownTime: 80
+        alternate: true
+        inaccuracy: 10
 
         layerOffset: -0.01
 
@@ -404,8 +406,8 @@ weapons: [
           type: ShootSpread
           firstShotDelay: 12
           shots: 9
-          shotDelay: 8
-          spread: 30
+          shotDelay: 6
+          spread: 11
         }
 
         bullet: {
@@ -415,12 +417,20 @@ weapons: [
             width: 7
             height: 9
             lifetime: 50
+            shrinkY: 0
 
             splashDamageRadius: 10
             splashDamage: 20
 
             trailWidth: 1.5
             trailLength: 7
+
+            homingRange: 40
+            homingPower: 0.1
+            homingDelay: 12
+
+            splashDamageRadius: 10
+            splashDamage: 30
 
             frontColor: ffffff
             backColor: f15454
