@@ -234,6 +234,21 @@ weapons: [
         hollow: true
 
         layer: 110
+      },
+      {
+        type: shapePart
+        progress: warmup
+        x: 0
+        y: 0
+        color: f15454
+        colorTo: f15454
+
+        radius: 2
+        radiusTo: 4
+
+        circle: true
+
+        layer: 110
       }
     ]
   },
