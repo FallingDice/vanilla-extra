@@ -404,7 +404,7 @@ weapons: [
 
         shoot: {
           type: ShootSpread
-          firstShotDelay: 24
+          firstShotDelay: 12
           shots: 9
           shotDelay: 6
           spread: 11
@@ -476,7 +476,7 @@ weapons: [
               {
                 type: RegionPart
                 progress: {
-                  type: charge
+                  type: warmup
                   op: delay
                   amount: 0.3
                 }
@@ -488,7 +488,7 @@ weapons: [
               {
                 type: RegionPart
                 progress: {
-                  type: charge
+                  type: warmup
                   op: delay
                   amount: 0.6
                 }
@@ -500,7 +500,7 @@ weapons: [
               {
                 type: RegionPart
                 progress: {
-                  type: charge
+                  type: warmup
                   op: delay
                   amount: 0.9
                 }
