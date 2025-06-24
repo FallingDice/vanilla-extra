@@ -475,8 +475,6 @@ weapons: [
                 moveRot: 20
                 moveX: 40
                 moveY: 20
-                  }
-                ]
               },
               {
                 type: RegionPart
@@ -489,7 +487,7 @@ weapons: [
                 suffix: -wing2
                 moveRot: 20
                 moveX: 60
-                moveY: 43
+                moveY: 40
               },
               {
                 type: RegionPart
@@ -502,7 +500,7 @@ weapons: [
                 suffix: -wing3
                 moveRot: 20
                 moveX: 80
-                moveY: 66
+                moveY: 60
               }
             ]
           }
@@ -526,8 +524,8 @@ weapons: [
           shotDelay: 6
           barrels: [
             40, 20, 0,
-            60, 40, 0,
-            80, 60, 0
+            60, 45, 0,
+            80, 70, 0
           ]
         }
 
