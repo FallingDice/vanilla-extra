@@ -482,9 +482,9 @@ weapons: [
                 }
 
                 suffix: -wing1
-                moveRot: -30
-                moveX: 40
-                moveY: -20
+                moveRot: -120
+                moveX: 10
+                moveY: -5
 
                 growProgress: warmup
                 growX: 0
@@ -509,9 +509,9 @@ weapons: [
                 }
 
                 suffix: -wing2
-                moveRot: -45
-                moveX: 80
-                moveY: -40
+                moveRot: -115
+                moveX: 20
+                moveY: -10
 
                 growProgress: warmup
                 growX: 0.1
@@ -536,9 +536,9 @@ weapons: [
                 }
 
                 suffix: -wing3
-                moveRot: -60
-                moveX: 120
-                moveY: -60
+                moveRot: -150
+                moveX: 30
+                moveY: -15
 
                 growProgress: warmup
                 growX: 0.3
