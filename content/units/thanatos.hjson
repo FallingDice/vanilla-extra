@@ -459,16 +459,16 @@ weapons: [
             moveRot: -45
             layerOffset: -0.02
 
-            growX: 0.1
-            growY: 0.3
+            growX: 0.2
+            growY: 0.5
 
             moves: [
               {
                 type: partMove
                 progress: recoil
                 rot: 0
-                x: 1
-                y: 1
+                x: 10
+                y: 10
               }
             ]
 
@@ -489,16 +489,6 @@ weapons: [
                 growProgress: warmup
                 growX: 0
                 growY: 0
-
-                moves: [
-                  {
-                    type: partMove
-                    progress: recoil
-                    rot: 5
-                    x: 1
-                    y: 1
-                  }
-                ]
               },
               {
                 type: RegionPart
@@ -516,16 +506,6 @@ weapons: [
                 growProgress: warmup
                 growX: 0.1
                 growY: 0.1
-
-                moves: [
-                  {
-                    type: partMove
-                    progress: recoil
-                    rot: 10
-                    x: 1
-                    y: 1
-                  }
-                ]
               },
               {
                 type: RegionPart
@@ -541,18 +521,8 @@ weapons: [
                 moveY: -15
 
                 growProgress: warmup
-                growX: 0.3
-                growY: 0.3
-
-                moves: [
-                  {
-                    type: partMove
-                    progress: recoil
-                    rot: 15
-                    x: 1
-                    y: 1
-                  }
-                ]
+                growX: 0.2
+                growY: 0.2
               }
             ]
           }
