@@ -482,10 +482,9 @@ weapons: [
                 }
 
                 suffix: -wing1
-                //plus45
-                moveRot: 75
-                moveX: 40
-                moveY: 20
+                moveRot: 30
+                moveX: -40
+                moveY: -20
 
                 growProgress: warmup
                 growX: 0
@@ -510,8 +509,8 @@ weapons: [
                 }
 
                 suffix: -wing2
-                moveRot: 90
-                moveX: 80
+                moveRot: 30
+                moveX: -80
                 moveY: -40
 
                 growProgress: warmup
@@ -522,7 +521,7 @@ weapons: [
                   {
                     type: partMove
                     progress: recoil
-                    rot: 10
+                    rot: 45
                     x: 1
                     y: 1
                   }
@@ -537,8 +536,8 @@ weapons: [
                 }
 
                 suffix: -wing3
-                moveRot: 105
-                moveX: 120
+                moveRot: 60
+                moveX: -120
                 moveY: -60
 
                 growProgress: warmup
