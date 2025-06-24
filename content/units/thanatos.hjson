@@ -475,6 +475,7 @@ weapons: [
                 moveRot: 10
                 moveX: 40
                 moveY: 20
+                rotate: true
 
                 growProgress: warmup
                 growX: 0
