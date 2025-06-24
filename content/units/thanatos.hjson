@@ -438,6 +438,10 @@ weapons: [
 
             shake: 2
 
+            shootWarmupSpeed: 0.05
+            minWarmup: 0.9
+            warmupMaintainTime: 300
+
             //basic effect
             shootEffect: sparkShoot
             smokeEffect: shootBigSmoke
